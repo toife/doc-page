@@ -1,6 +1,12 @@
 $mode: (
   "background-color": ("light", 700),
-  "border-color": ("light", 700),
+  "border-color": (
+    "": ("light", 700),
+    "focus": ("light", 750),
+    "hover": ("light", 750),
+    "active": ("light", 750),
+    "disabled": ("light", 750)
+  ),
   "color": ("light", 700),
   "placeholder-color": ("light", 400),
   "help-color": ("light", 400),
@@ -8,7 +14,13 @@ $mode: (
 
 $reverse: (
   "background-color": ("dark", 700),
-  "border-color": ("dark", 700),
+  "border-color": (
+    "": ("dark", 700),
+    "focus": ("dark", 750),
+    "hover": ("dark", 750),
+    "active": ("dark", 750),
+    "disabled": ("dark", 750)
+  ),
   "color": ("dark", 700),
   "placeholder-color": ("dark", 400),
   "help-color": ("dark", 400),
@@ -16,7 +28,13 @@ $reverse: (
 
 $primary: (
   "background-color": ("primary", 550),
-  "border-color": ("primary", 550),
+  "border-color": (
+    "": ("primary", 550),
+    "focus": ("primary", 650),
+    "hover": ("primary", 650),
+    "active": ("primary", 650),
+    "disabled": ("primary", 550)
+  ),
   "color": ("primary", 550),
   "placeholder-color": ("primary", 100),
   "help-color": ("primary", 100),
@@ -24,7 +42,13 @@ $primary: (
 
 $success: (
   "background-color": ("success", 550),
-  "border-color": ("success", 550),
+  "border-color": (
+    "": ("success", 550),
+    "focus": ("success", 650),
+    "hover": ("success", 650),
+    "active": ("success", 650),
+    "disabled": ("success", 550)
+  ),
   "color": ("success", 550),
   "placeholder-color": ("success", 100),
   "help-color": ("success", 100),
@@ -32,7 +56,13 @@ $success: (
 
 $info: (
   "background-color": ("info", 550),
-  "border-color": ("info", 550),
+  "border-color": (
+    "": ("info", 550),
+    "focus": ("info", 650),
+    "hover": ("info", 650),
+    "active": ("info", 650),
+    "disabled": ("info", 550)
+  ),
   "color": ("info", 550),
   "placeholder-color": ("info", 100),
   "help-color": ("info", 100),
@@ -40,7 +70,13 @@ $info: (
 
 $warning: (
   "background-color": ("warning", 550),
-  "border-color": ("warning", 550),
+  "border-color": (
+    "": ("warning", 550),
+    "focus": ("warning", 650),
+    "hover": ("warning", 650),
+    "active": ("warning", 650),
+    "disabled": ("warning", 550)
+  ),
   "color": ("warning", 550),
   "placeholder-color": ("warning", 100),
   "help-color": ("warning", 100),
@@ -48,7 +84,13 @@ $warning: (
 
 $danger: (
   "background-color": ("danger", 550),
-  "border-color": ("danger", 550),
+  "border-color": (
+    "": ("danger", 550),
+    "focus": ("danger", 650),
+    "hover": ("danger", 650),
+    "active": ("danger", 650),
+    "disabled": ("danger", 550)
+  ),
   "color": ("danger", 550),
   "placeholder-color": ("danger", 100),
   "help-color": ("danger", 100),

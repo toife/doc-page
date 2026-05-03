@@ -6,7 +6,13 @@ $mode: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("dark", 800),
     "unchecked": ("light", 700),
@@ -27,7 +33,13 @@ $reverse: (
     "focus": ("dark", 950),
     "disabled": ("dark", 400),
   ),
-  "color": ("dark", 950),
+  "color": (
+    "checked": ("dark", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
   "border-color": (
     "checked": ("light", 800),
     "unchecked": ("light", 700),
@@ -48,7 +60,13 @@ $primary: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("primary", 550),
     "unchecked": ("light", 700),
@@ -69,7 +87,13 @@ $success: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("success", 550),
     "unchecked": ("light", 700),
@@ -90,7 +114,13 @@ $info: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("info", 550),
     "unchecked": ("light", 700),
@@ -111,7 +141,13 @@ $warning: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("warning", 550),
     "unchecked": ("light", 700),
@@ -132,7 +168,13 @@ $danger: (
     "focus": ("light", 950),
     "disabled": ("light", 400),
   ),
-  "color": ("light", 950),
+  "color": (
+    "checked": ("light", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "checked": ("danger", 550),
     "unchecked": ("light", 700),
