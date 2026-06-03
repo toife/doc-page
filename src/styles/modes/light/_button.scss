@@ -1,6 +1,6 @@
-// Matches vue button.scss: color; background-color / border-color with
-// default ("") + hover, focus, active, disabled only.
-$mode: (
+// Matches vue button.scss: fill / outline / text variants with state tokens
+// (default, hover, focus, active, disabled).
+$mode-fill: (
   "background-color": (
     "": ("dark", 700),
     "hover": ("dark", 800),
@@ -24,7 +24,61 @@ $mode: (
   ),
 );
 
-$reverse: (
+$mode-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 900),
+    "focus": ("light", 900),
+    "active": ("light", 900),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("dark", 700),
+    "hover": ("dark", 800),
+    "focus": ("dark", 900),
+    "active": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
+  "border-color": (
+    "": ("dark", 700),
+    "hover": ("dark", 800),
+    "focus": ("dark", 900),
+    "active": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 900),
+  ),
+);
+
+$mode-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("dark", 700),
+    "hover": ("dark", 800),
+    "focus": ("dark", 900),
+    "active": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 900),
+  ),
+);
+
+$reverse-fill: (
   "background-color": (
     "": ("light", 950),
     "hover": ("light", 800),
@@ -48,7 +102,61 @@ $reverse: (
   ),
 );
 
-$primary: (
+$reverse-outline: (
+  "background-color": (
+    "": ("dark", 950),
+    "hover": ("dark", 900),
+    "focus": ("dark", 900),
+    "active": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
+  "color": (
+    "": ("light", 950),
+    "hover": ("light", 900),
+    "focus": ("light", 900),
+    "active": ("light", 900),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "": ("light", 750),
+    "hover": ("light", 800),
+    "focus": ("light", 900),
+    "active": ("light", 900),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("light", 900),
+  ),
+);
+
+$reverse-text: (
+  "background-color": (
+    "": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "active": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
+  "color": (
+    "": ("light", 950),
+    "hover": ("light", 900),
+    "focus": ("light", 900),
+    "active": ("light", 900),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "active": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("light", 900),
+  ),
+);
+
+$primary-fill: (
   "background-color": (
     "": ("primary", 550),
     "hover": ("primary", 650),
@@ -72,7 +180,61 @@ $primary: (
   ),
 );
 
-$success: (
+$primary-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("primary", 100),
+    "focus": ("primary", 100),
+    "active": ("primary", 100),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("primary", 550),
+    "hover": ("primary", 650),
+    "focus": ("primary", 750),
+    "active": ("primary", 750),
+    "disabled": ("primary", 250),
+  ),
+  "border-color": (
+    "": ("primary", 550),
+    "hover": ("primary", 650),
+    "focus": ("primary", 750),
+    "active": ("primary", 750),
+    "disabled": ("primary", 250),
+  ),
+  "box-shadow-color": (
+    "focus": ("primary", 900),
+  ),
+);
+
+$primary-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("primary", 550),
+    "hover": ("primary", 650),
+    "focus": ("primary", 750),
+    "active": ("primary", 750),
+    "disabled": ("primary", 250),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("primary", 900),
+  ),
+);
+
+$success-fill: (
   "background-color": (
     "": ("success", 550),
     "hover": ("success", 650),
@@ -96,7 +258,61 @@ $success: (
   ),
 );
 
-$info: (
+$success-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("success", 100),
+    "focus": ("success", 100),
+    "active": ("success", 100),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("success", 550),
+    "hover": ("success", 650),
+    "focus": ("success", 750),
+    "active": ("success", 750),
+    "disabled": ("success", 250),
+  ),
+  "border-color": (
+    "": ("success", 550),
+    "hover": ("success", 650),
+    "focus": ("success", 750),
+    "active": ("success", 750),
+    "disabled": ("success", 250),
+  ),
+  "box-shadow-color": (
+    "focus": ("success", 900),
+  ),
+);
+
+$success-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("success", 550),
+    "hover": ("success", 650),
+    "focus": ("success", 750),
+    "active": ("success", 750),
+    "disabled": ("success", 250),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("success", 900),
+  ),
+);
+
+$info-fill: (
   "background-color": (
     "": ("info", 550),
     "hover": ("info", 650),
@@ -120,7 +336,61 @@ $info: (
   ),
 );
 
-$warning: (
+$info-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("info", 100),
+    "focus": ("info", 100),
+    "active": ("info", 100),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("info", 550),
+    "hover": ("info", 650),
+    "focus": ("info", 750),
+    "active": ("info", 750),
+    "disabled": ("info", 250),
+  ),
+  "border-color": (
+    "": ("info", 550),
+    "hover": ("info", 650),
+    "focus": ("info", 750),
+    "active": ("info", 750),
+    "disabled": ("info", 250),
+  ),
+  "box-shadow-color": (
+    "focus": ("info", 900),
+  ),
+);
+
+$info-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("info", 550),
+    "hover": ("info", 650),
+    "focus": ("info", 750),
+    "active": ("info", 750),
+    "disabled": ("info", 250),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("info", 900),
+  ),
+);
+
+$warning-fill: (
   "background-color": (
     "": ("warning", 550),
     "hover": ("warning", 650),
@@ -144,7 +414,61 @@ $warning: (
   ),
 );
 
-$danger: (
+$warning-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("warning", 100),
+    "focus": ("warning", 100),
+    "active": ("warning", 100),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("warning", 550),
+    "hover": ("warning", 650),
+    "focus": ("warning", 750),
+    "active": ("warning", 750),
+    "disabled": ("warning", 250),
+  ),
+  "border-color": (
+    "": ("warning", 550),
+    "hover": ("warning", 650),
+    "focus": ("warning", 750),
+    "active": ("warning", 750),
+    "disabled": ("warning", 250),
+  ),
+  "box-shadow-color": (
+    "focus": ("warning", 900),
+  ),
+);
+
+$warning-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("warning", 550),
+    "hover": ("warning", 650),
+    "focus": ("warning", 750),
+    "active": ("warning", 750),
+    "disabled": ("warning", 250),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("warning", 900),
+  ),
+);
+
+$danger-fill: (
   "background-color": (
     "": ("danger", 550),
     "hover": ("danger", 650),
@@ -168,12 +492,82 @@ $danger: (
   ),
 );
 
-$layer-button: (
-  "mode": $mode,
-  "reverse": $reverse,
-  "primary": $primary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+$danger-outline: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("danger", 100),
+    "focus": ("danger", 100),
+    "active": ("danger", 100),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("danger", 550),
+    "hover": ("danger", 650),
+    "focus": ("danger", 750),
+    "active": ("danger", 750),
+    "disabled": ("danger", 250),
+  ),
+  "border-color": (
+    "": ("danger", 550),
+    "hover": ("danger", 650),
+    "focus": ("danger", 750),
+    "active": ("danger", 750),
+    "disabled": ("danger", 250),
+  ),
+  "box-shadow-color": (
+    "focus": ("danger", 900),
+  ),
+);
+
+$danger-text: (
+  "background-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "": ("danger", 550),
+    "hover": ("danger", 650),
+    "focus": ("danger", 750),
+    "active": ("danger", 750),
+    "disabled": ("danger", 250),
+  ),
+  "border-color": (
+    "": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "active": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("danger", 900),
+  ),
+);
+
+$config: (
+  "roles": (
+    "mode-fill": $mode-fill,
+    "mode-outline": $mode-outline,
+    "mode-text": $mode-text,
+    "reverse-fill": $reverse-fill,
+    "reverse-outline": $reverse-outline,
+    "reverse-text": $reverse-text,
+    "primary-fill": $primary-fill,
+    "primary-outline": $primary-outline,
+    "primary-text": $primary-text,
+    "success-fill": $success-fill,
+    "success-outline": $success-outline,
+    "success-text": $success-text,
+    "info-fill": $info-fill,
+    "info-outline": $info-outline,
+    "info-text": $info-text,
+    "warning-fill": $warning-fill,
+    "warning-outline": $warning-outline,
+    "warning-text": $warning-text,
+    "danger-fill": $danger-fill,
+    "danger-outline": $danger-outline,
+    "danger-text": $danger-text,
+  ),
 );

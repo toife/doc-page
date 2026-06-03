@@ -27,12 +27,15 @@ $danger: (
   "border-color": ("danger", 550),
 );
 
-$layer-action: (
-  "mode": $mode,
-  "reverse": $reverse,
-  "primary": $primary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+$config: (
+  "roles": (
+    "mode": $mode,
+    "reverse": $reverse,
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+
+  ),
 );

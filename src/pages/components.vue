@@ -55,6 +55,7 @@ const componentGroups: ComponentGroup[] = [
       { to: "/components/form-group", label: "Form group", tag: "t-form-group" },
       { to: "/components/dropdown", label: "Dropdown", tag: "t-dropdown" },
       { to: "/components/select", label: "Select", tag: "t-select" },
+      { to: "/components/slide-range", label: "Slide range", tag: "t-slide-range" },
     ],
   },
   {
@@ -94,6 +95,7 @@ const componentGroups: ComponentGroup[] = [
       { to: "/components/avatar", label: "Avatar", tag: "t-avatar" },
       { to: "/components/image", label: "Image", tag: "t-image" },
       { to: "/components/skeleton", label: "Skeleton", tag: "t-skeleton" },
+      { to: "/components/tag", label: "Tag", tag: "t-tag" },
     ],
   },
   {

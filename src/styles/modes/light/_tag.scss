@@ -1,0 +1,131 @@
+// Matches vue tag/*.scss: fill / outline / text variants with independent tokens.
+$mode-fill: (
+  "color": ("light", 900),
+  "background-color": ("dark", 700),
+  "border-color": ("dark", 700),
+);
+
+$mode-outline: (
+  "color": ("dark", 700),
+  "border-color": ("dark", 700),
+);
+
+$mode-text: (
+  "color": ("dark", 700),
+);
+
+$reverse-fill: (
+  "color": ("dark", 900),
+  "background-color": ("light", 950),
+  "border-color": ("light", 750),
+);
+
+$reverse-outline: (
+  "color": ("light", 950),
+  "border-color": ("light", 750),
+);
+
+$reverse-text: (
+  "color": ("light", 950),
+);
+
+$primary-fill: (
+  "color": ("light", 900),
+  "background-color": ("primary", 550),
+  "border-color": ("primary", 550),
+);
+
+$primary-outline: (
+  "color": ("primary", 550),
+  "border-color": ("primary", 550),
+);
+
+$primary-text: (
+  "color": ("primary", 550),
+);
+
+$success-fill: (
+  "color": ("light", 900),
+  "background-color": ("success", 550),
+  "border-color": ("success", 550),
+);
+
+$success-outline: (
+  "color": ("success", 550),
+  "border-color": ("success", 550),
+);
+
+$success-text: (
+  "color": ("success", 550),
+);
+
+$info-fill: (
+  "color": ("light", 900),
+  "background-color": ("info", 550),
+  "border-color": ("info", 550),
+);
+
+$info-outline: (
+  "color": ("info", 550),
+  "border-color": ("info", 550),
+);
+
+$info-text: (
+  "color": ("info", 550),
+);
+
+$warning-fill: (
+  "color": ("dark", 900),
+  "background-color": ("warning", 550),
+  "border-color": ("warning", 550),
+);
+
+$warning-outline: (
+  "color": ("warning", 550),
+  "border-color": ("warning", 550),
+);
+
+$warning-text: (
+  "color": ("warning", 550),
+);
+
+$danger-fill: (
+  "color": ("light", 900),
+  "background-color": ("danger", 550),
+  "border-color": ("danger", 550),
+);
+
+$danger-outline: (
+  "color": ("danger", 550),
+  "border-color": ("danger", 550),
+);
+
+$danger-text: (
+  "color": ("danger", 550),
+);
+
+$config: (
+  "roles": (
+    "mode-fill": $mode-fill,
+    "mode-outline": $mode-outline,
+    "mode-text": $mode-text,
+    "reverse-fill": $reverse-fill,
+    "reverse-outline": $reverse-outline,
+    "reverse-text": $reverse-text,
+    "primary-fill": $primary-fill,
+    "primary-outline": $primary-outline,
+    "primary-text": $primary-text,
+    "success-fill": $success-fill,
+    "success-outline": $success-outline,
+    "success-text": $success-text,
+    "info-fill": $info-fill,
+    "info-outline": $info-outline,
+    "info-text": $info-text,
+    "warning-fill": $warning-fill,
+    "warning-outline": $warning-outline,
+    "warning-text": $warning-text,
+    "danger-fill": $danger-fill,
+    "danger-outline": $danger-outline,
+    "danger-text": $danger-text,
+  ),
+);

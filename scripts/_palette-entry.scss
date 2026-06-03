@@ -1,0 +1,7 @@
+@use "@toife/sass-layer" with (
+  $shape-pill-border-radius: 2rem,
+  $modes: (),
+);
+@use "@toife/sass-layer/generators/theme/root" as root;
+
+@include root.generate();

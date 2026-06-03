@@ -185,6 +185,12 @@ export default [
       },
 
       {
+        path: "/components/slide-range",
+        name: "components-slide-range",
+        component: () => import("../pages/components/slide-range.vue"),
+      },
+
+      {
         path: "/components/switch",
         name: "components-switch",
         component: () => import("../pages/components/switch.vue"),
@@ -194,6 +200,12 @@ export default [
         path: "/components/tabs",
         name: "components-tabs",
         component: () => import("../pages/components/tabs.vue"),
+      },
+
+      {
+        path: "/components/tag",
+        name: "components-tag",
+        component: () => import("../pages/components/tag.vue"),
       },
 
       {

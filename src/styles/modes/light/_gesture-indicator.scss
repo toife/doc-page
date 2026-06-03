@@ -26,12 +26,15 @@ $danger: (
   "border-color": ("danger", 550),
 );
 
-$layer-gesture-indicator: (
-  "mode": $mode,
-  "reverse": $reverse,
-  "primary": $primary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+$config: (
+  "roles": (
+    "mode": $mode,
+    "reverse": $reverse,
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+
+  ),
 );

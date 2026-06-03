@@ -14,6 +14,7 @@
 @use "checkbox";
 @use "card";
 @use "button";
+@use "tag";
 @use "avatar";
 @use "action";
 @use "divider";
@@ -22,29 +23,34 @@
 @use "skeleton";
 @use "gesture-indicator";
 @use "slide-range";
+@use "badge";
+@use "route-navigator";
 
 $mode: (
-  "backdrop": backdrop.$layer-backdrop,
-  "text": text.$layer-text,
-  "app": app.$layer-app,
-  "toolbar": toolbar.$layer-toolbar,
-  "tabs": tabs.$layer-tabs,
-  "switch": switch.$layer-switch,
-  "segmented-field": segmented-field.$layer-segmented-field,
-  "radio": radio.$layer-radio,
-  "select": select.$layer-select,
-  "modal": modal.$layer-modal,
-  "field": field.$layer-field,
-  "collapse": collapse.$layer-collapse,
-  "checkbox": checkbox.$layer-checkbox,
-  "card": card.$layer-card,
-  "button": button.$layer-button,
-  "avatar": avatar.$layer-avatar,
-  "action": action.$layer-action,
-  "divider": divider.$layer-divider,
-  "dropdown": dropdown.$layer-dropdown,
-  "toast": toast.$layer-toast,
-  "skeleton": skeleton.$layer-skeleton,
-  "gesture-indicator": gesture-indicator.$layer-gesture-indicator,
-  "slide-range": slide-range.$layer-slide-range,
+  "backdrop": backdrop.$config,
+  "text": text.$config,
+  "app": app.$config,
+  "toolbar": toolbar.$config,
+  "tabs": tabs.$config,
+  "switch": switch.$config,
+  "segmented-field": segmented-field.$config,
+  "radio": radio.$config,
+  "select": select.$config,
+  "modal": modal.$config,
+  "field": field.$config,
+  "collapse": collapse.$config,
+  "checkbox": checkbox.$config,
+  "card": card.$config,
+  "button": button.$config,
+  "tag": tag.$config,
+  "avatar": avatar.$config,
+  "action": action.$config,
+  "divider": divider.$config,
+  "dropdown": dropdown.$config,
+  "toast": toast.$config,
+  "skeleton": skeleton.$config,
+  "gesture-indicator": gesture-indicator.$config,
+  "slide-range": slide-range.$config,
+  "badge": badge.$config,
+  "route-navigator": route-navigator.$config,
 );

@@ -96,12 +96,15 @@ $danger: (
   "help-color": ("danger", 100),
 );
 
-$layer-field: (
-  "mode": $mode,
-  "reverse": $reverse,
-  "primary": $primary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+$config: (
+  "roles": (
+    "mode": $mode,
+    "reverse": $reverse,
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+
+  ),
 );

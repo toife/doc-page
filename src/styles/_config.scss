@@ -1,7 +1,5 @@
 @use "./modes/light/" as light;
 @use "@toife/sass-layer" with (
-  $prefix: "t",
-  $separator: "-",
   $modes: (
     "light": light.$mode,
   )

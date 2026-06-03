@@ -9,6 +9,9 @@ $default: (
   ),
 );
 
-$layer-app: (
-  "": $default,
+$config: (
+  "roles": (
+    "": $default,
+
+  ),
 );

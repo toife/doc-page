@@ -4,9 +4,15 @@ import "./app.scss";
 import routes from "./config/routes";
 import { createRouter, createWebHashHistory } from "vue-router";
 import { createToife } from "@toife/vue";
+import "@toife/vue/styles/index.css";
 
 const app = createApp(App);
-app.use(createToife());
+// Toife app
+const toife = createToife(app, {
+  name: 'themes'
+});
+toife.subscribeAll();
+// toife.preventDefault();
 
 const router = createRouter({
   history: createWebHashHistory("/"),

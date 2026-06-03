@@ -1,11 +1,12 @@
 $default: (
-  "opacity": 0.4,
-  "background-color": ("dark", 400),
+  "background-color": (
+    "light",
+    900,
+  )
 );
 
 $config: (
   "roles": (
     "": $default,
-
   ),
 );

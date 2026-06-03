@@ -1,43 +1,43 @@
 $mode: (
-  "background-color": ("light", 950),
-  "border-color": ("light", 800),
-  "color": ("dark", 900),
+  "color": ("light", 900),
+  "background-color": ("dark", 700),
+  "border-color": ("dark", 700),
 );
 
 $reverse: (
-  "background-color": ("dark", 700),
-  "border-color": ("dark", 700),
-  "color": ("light", 900),
+  "color": ("dark", 900),
+  "background-color": ("light", 950),
+  "border-color": ("light", 750),
 );
 
 $primary: (
+  "color": ("light", 900),
   "background-color": ("primary", 550),
   "border-color": ("primary", 550),
-  "color": ("light", 900),
 );
 
 $success: (
+  "color": ("light", 900),
   "background-color": ("success", 550),
   "border-color": ("success", 550),
-  "color": ("light", 900),
 );
 
 $info: (
+  "color": ("light", 900),
   "background-color": ("info", 550),
   "border-color": ("info", 550),
-  "color": ("light", 900),
 );
 
 $warning: (
+  "color": ("dark", 900),
   "background-color": ("warning", 550),
   "border-color": ("warning", 550),
-  "color": ("dark", 900),
 );
 
 $danger: (
+  "color": ("light", 900),
   "background-color": ("danger", 550),
   "border-color": ("danger", 550),
-  "color": ("light", 900),
 );
 
 $config: (
@@ -49,6 +49,5 @@ $config: (
     "info": $info,
     "warning": $warning,
     "danger": $danger,
-
   ),
 );

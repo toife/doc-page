@@ -33,12 +33,15 @@ $danger: (
   "color": ("light", 900),
 );
 
-$layer-collapse: (
-  "mode": $mode,
-  "reverse": $reverse,
-  "primary": $primary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
+$config: (
+  "roles": (
+    "mode": $mode,
+    "reverse": $reverse,
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+
+  ),
 );
