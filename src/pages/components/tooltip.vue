@@ -4,8 +4,8 @@
       <t-card-header>Tooltip</t-card-header>
       <t-card-body>
         <p class="demo-lead">
-          <code>t-tooltip</code> wraps a trigger and shows content on hover or focus. Put tooltip text in
-          the default slot and the activator in <code>#trigger</code>.
+          <code>t-tooltip</code> wraps a trigger and shows content on hover or focus. Put the activator in
+          the default slot and tooltip text in <code>#content</code>.
         </p>
         <div>
           <t-radio-group v-model="role" direction="horizontal">
@@ -22,10 +22,8 @@
         <section class="demo-section">
           <h3 class="demo-heading">Basic</h3>
           <t-tooltip :role="role">
-            Helpful hint text
-            <template #trigger>
-              <t-button :role="role" variant="outline">Hover me</t-button>
-            </template>
+            <t-button :role="role" variant="outline">Hover me</t-button>
+            <template #content>Helpful hint text</template>
           </t-tooltip>
         </section>
         <t-divider class="margin-y-4" />
@@ -33,28 +31,20 @@
           <h3 class="demo-heading">Placement</h3>
           <div class="placement-grid">
             <t-tooltip placement="top" :role="role">
-              Tooltip on top
-              <template #trigger>
-                <t-button :role="role" variant="outline" size="small">Top</t-button>
-              </template>
+              <t-button :role="role" variant="outline" size="small">Top</t-button>
+              <template #content>Tooltip on top</template>
             </t-tooltip>
             <t-tooltip placement="bottom" :role="role">
-              Tooltip on bottom
-              <template #trigger>
-                <t-button :role="role" variant="outline" size="small">Bottom</t-button>
-              </template>
+              <t-button :role="role" variant="outline" size="small">Bottom</t-button>
+              <template #content>Tooltip on bottom</template>
             </t-tooltip>
             <t-tooltip placement="left" :role="role">
-              Tooltip on left
-              <template #trigger>
-                <t-button :role="role" variant="outline" size="small">Left</t-button>
-              </template>
+              <t-button :role="role" variant="outline" size="small">Left</t-button>
+              <template #content>Tooltip on left</template>
             </t-tooltip>
             <t-tooltip placement="right" :role="role">
-              Tooltip on right
-              <template #trigger>
-                <t-button :role="role" variant="outline" size="small">Right</t-button>
-              </template>
+              <t-button :role="role" variant="outline" size="small">Right</t-button>
+              <template #content>Tooltip on right</template>
             </t-tooltip>
           </div>
         </section>
@@ -62,10 +52,8 @@
         <section class="demo-section">
           <h3 class="demo-heading">Disabled</h3>
           <t-tooltip :role="role" disabled>
-            This tooltip will not show
-            <template #trigger>
-              <t-button :role="role" variant="outline">Disabled trigger</t-button>
-            </template>
+            <t-button :role="role" variant="outline">Disabled trigger</t-button>
+            <template #content>This tooltip will not show</template>
           </t-tooltip>
         </section>
       </t-card-body>
