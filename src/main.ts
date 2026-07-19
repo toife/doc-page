@@ -4,7 +4,6 @@ import "./app.scss";
 import routes from "./config/routes";
 import { createRouter, createWebHashHistory } from "vue-router";
 import { createToife } from "@toife/vue";
-import "@toife/vue/styles/index.css";
 
 const app = createApp(App);
 // Toife app

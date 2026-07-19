@@ -1,9 +1,10 @@
 // Entry for theme + utility classes. Used by app.scss.
 // Both test:dev and test:build compile this file -> tokens + classes are included in CSS.
 // IMPORTANT: Load sass-layer with config FIRST (before themes) so custom config applies
-@use "@toife/sass-layer" as sass;
-@include sass.theme-generate();
-@include sass.util-generate();
+@use "@toife/sass-layer" as layer;
+@use "@toife/sass-utils" as utils;
+@include layer.build();
+@include utils.build();
 
 body {
   height: 100vh;

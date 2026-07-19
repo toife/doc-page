@@ -215,6 +215,12 @@ export default [
       },
 
       {
+        path: "/components/tooltip",
+        name: "components-tooltip",
+        component: () => import("../pages/components/tooltip.vue"),
+      },
+
+      {
         path: "/components/toolbar",
         name: "components-toolbar",
         component: () => import("../pages/components/toolbar.vue"),

@@ -1,4 +1,5 @@
-$mode: (
+// fill / outline variants with checked-state tokens.
+$mode-fill: (
   "background-color": (
     "checked": ("dark", 800),
     "unchecked": ("light", 950),
@@ -25,7 +26,34 @@ $mode: (
   ),
 );
 
-$reverse: (
+$mode-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("dark", 800),
+    "unchecked": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("dark", 800),
+    "unchecked": ("light", 700),
+    "hover": ("dark", 700),
+    "focus": ("dark", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 500),
+  ),
+);
+
+$reverse-fill: (
   "background-color": (
     "checked": ("light", 800),
     "unchecked": ("dark", 950),
@@ -52,7 +80,34 @@ $reverse: (
   ),
 );
 
-$primary: (
+$reverse-outline: (
+  "background-color": (
+    "checked": ("dark", 950),
+    "unchecked": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
+  "color": (
+    "checked": ("light", 800),
+    "unchecked": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
+  "border-color": (
+    "checked": ("light", 800),
+    "unchecked": ("light", 700),
+    "hover": ("dark", 700),
+    "focus": ("dark", 700),
+    "disabled": ("dark", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("light", 500),
+  ),
+);
+
+$primary-fill: (
   "background-color": (
     "checked": ("primary", 550),
     "unchecked": ("light", 950),
@@ -79,7 +134,34 @@ $primary: (
   ),
 );
 
-$success: (
+$primary-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("primary", 550),
+    "unchecked": ("dark", 950),
+    "hover": ("primary", 550),
+    "focus": ("primary", 550),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("primary", 550),
+    "unchecked": ("light", 700),
+    "hover": ("primary", 700),
+    "focus": ("primary", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("primary", 500),
+  ),
+);
+
+$success-fill: (
   "background-color": (
     "checked": ("success", 550),
     "unchecked": ("light", 950),
@@ -106,7 +188,34 @@ $success: (
   ),
 );
 
-$info: (
+$success-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("success", 550),
+    "unchecked": ("dark", 950),
+    "hover": ("success", 550),
+    "focus": ("success", 550),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("success", 550),
+    "unchecked": ("light", 700),
+    "hover": ("success", 700),
+    "focus": ("success", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("success", 500),
+  ),
+);
+
+$info-fill: (
   "background-color": (
     "checked": ("info", 550),
     "unchecked": ("light", 950),
@@ -133,7 +242,34 @@ $info: (
   ),
 );
 
-$warning: (
+$info-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("info", 550),
+    "unchecked": ("dark", 950),
+    "hover": ("info", 550),
+    "focus": ("info", 550),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("info", 550),
+    "unchecked": ("light", 700),
+    "hover": ("info", 700),
+    "focus": ("info", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("info", 500),
+  ),
+);
+
+$warning-fill: (
   "background-color": (
     "checked": ("warning", 550),
     "unchecked": ("light", 950),
@@ -160,7 +296,34 @@ $warning: (
   ),
 );
 
-$danger: (
+$warning-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("warning", 550),
+    "unchecked": ("dark", 950),
+    "hover": ("warning", 550),
+    "focus": ("warning", 550),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("warning", 550),
+    "unchecked": ("light", 700),
+    "hover": ("warning", 700),
+    "focus": ("warning", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("warning", 500),
+  ),
+);
+
+$danger-fill: (
   "background-color": (
     "checked": ("danger", 550),
     "unchecked": ("light", 950),
@@ -187,15 +350,48 @@ $danger: (
   ),
 );
 
+$danger-outline: (
+  "background-color": (
+    "checked": ("light", 950),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": (
+    "checked": ("danger", 550),
+    "unchecked": ("dark", 950),
+    "hover": ("danger", 550),
+    "focus": ("danger", 550),
+    "disabled": ("light", 400),
+  ),
+  "border-color": (
+    "checked": ("danger", 550),
+    "unchecked": ("light", 700),
+    "hover": ("danger", 700),
+    "focus": ("danger", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("danger", 500),
+  ),
+);
+
 $config: (
   "roles": (
-    "mode": $mode,
-    "reverse": $reverse,
-    "primary": $primary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-
+    "mode-fill": $mode-fill,
+    "mode-outline": $mode-outline,
+    "reverse-fill": $reverse-fill,
+    "reverse-outline": $reverse-outline,
+    "primary-fill": $primary-fill,
+    "primary-outline": $primary-outline,
+    "success-fill": $success-fill,
+    "success-outline": $success-outline,
+    "info-fill": $info-fill,
+    "info-outline": $info-outline,
+    "warning-fill": $warning-fill,
+    "warning-outline": $warning-outline,
+    "danger-fill": $danger-fill,
+    "danger-outline": $danger-outline,
   ),
 );

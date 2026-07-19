@@ -1,5 +1,6 @@
 @use "./modes/light/" as light;
 @use "@toife/sass-layer" with (
+  $border-width: 1px,
   $modes: (
     "light": light.$mode,
   )

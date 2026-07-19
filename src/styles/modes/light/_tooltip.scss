@@ -1,0 +1,54 @@
+// Matches core tooltip.scss: background, border, and text tokens per role.
+$mode: (
+  "background-color": ("dark", 900),
+  "border-color": ("dark", 900),
+  "color": ("light", 900),
+);
+
+$reverse: (
+  "background-color": ("light", 950),
+  "border-color": ("light", 700),
+  "color": ("dark", 900),
+);
+
+$primary: (
+  "background-color": ("primary", 550),
+  "border-color": ("primary", 550),
+  "color": ("light", 900),
+);
+
+$success: (
+  "background-color": ("success", 550),
+  "border-color": ("success", 550),
+  "color": ("light", 900),
+);
+
+$info: (
+  "background-color": ("info", 550),
+  "border-color": ("info", 550),
+  "color": ("light", 900),
+);
+
+$warning: (
+  "background-color": ("warning", 550),
+  "border-color": ("warning", 550),
+  "color": ("dark", 900),
+);
+
+$danger: (
+  "background-color": ("danger", 550),
+  "border-color": ("danger", 550),
+  "color": ("light", 900),
+);
+
+$config: (
+  "roles": (
+    "mode": $mode,
+    "reverse": $reverse,
+    "primary": $primary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+  ),
+);

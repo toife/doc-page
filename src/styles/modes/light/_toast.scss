@@ -1,54 +1,103 @@
-$mode: (
+// fill / text variants for toast content.
+$mode-fill: (
   "background-color": ("light", 700),
   "color": ("dark", 900),
   "border-color": ("light", 700),
 );
 
-$reverse: (
+$mode-text: (
+  "background-color": ("light", 950),
+  "color": ("dark", 900),
+  "border-color": ("light", 950),
+);
+
+$reverse-fill: (
   "background-color": ("dark", 700),
   "color": ("light", 900),
   "border-color": ("dark", 700),
 );
 
-$primary: (
+$reverse-text: (
+  "background-color": ("dark", 950),
+  "color": ("light", 900),
+  "border-color": ("dark", 950),
+);
+
+$primary-fill: (
   "background-color": ("primary", 550),
   "color": ("light", 900),
   "border-color": ("primary", 550),
 );
 
-$success: (
+$primary-text: (
+  "background-color": ("light", 950),
+  "color": ("primary", 550),
+  "border-color": ("primary", 550),
+);
+
+$success-fill: (
   "background-color": ("success", 550),
   "color": ("light", 900),
   "border-color": ("success", 550),
 );
 
-$info: (
+$success-text: (
+  "background-color": ("light", 950),
+  "color": ("success", 550),
+  "border-color": ("success", 550),
+);
+
+$info-fill: (
   "background-color": ("info", 550),
   "color": ("light", 900),
   "border-color": ("info", 550),
 );
 
-$warning: (
+$info-text: (
+  "background-color": ("light", 950),
+  "color": ("info", 550),
+  "border-color": ("info", 550),
+);
+
+$warning-fill: (
   "background-color": ("warning", 550),
   "color": ("dark", 900),
   "border-color": ("warning", 550),
 );
 
-$danger: (
+$warning-text: (
+  "background-color": ("light", 950),
+  "color": ("warning", 550),
+  "border-color": ("warning", 550),
+);
+
+$danger-fill: (
   "background-color": ("danger", 550),
   "color": ("light", 900),
   "border-color": ("danger", 550),
 );
 
+$danger-text: (
+  "background-color": ("light", 950),
+  "color": ("danger", 550),
+  "border-color": ("danger", 550),
+);
+
 $config: (
   "roles": (
-    "mode": $mode,
-    "reverse": $reverse,
-    "primary": $primary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-
+    "mode-fill": $mode-fill,
+    "mode-text": $mode-text,
+    "reverse-fill": $reverse-fill,
+    "reverse-text": $reverse-text,
+    "primary-fill": $primary-fill,
+    "primary-text": $primary-text,
+    "success-fill": $success-fill,
+    "success-text": $success-text,
+    "info-fill": $info-fill,
+    "info-text": $info-text,
+    "warning-fill": $warning-fill,
+    "warning-text": $warning-text,
+    "danger-fill": $danger-fill,
+    "danger-text": $danger-text,
   ),
 );

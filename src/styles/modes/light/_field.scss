@@ -1,95 +1,292 @@
-$mode: (
+// outline / fill / underline variants with field state tokens.
+$mode-outline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("light", 700),
+    "focus": ("light", 750),
+    "hover": ("light", 750),
+    "active": ("light", 750),
+    "disabled": ("light", 750),
+  ),
+  "color": ("dark", 900),
+  "placeholder-color": ("light", 400),
+  "help-color": ("light", 400),
+);
+
+$mode-fill: (
   "background-color": ("light", 700),
   "border-color": (
     "": ("light", 700),
     "focus": ("light", 750),
     "hover": ("light", 750),
     "active": ("light", 750),
-    "disabled": ("light", 750)
+    "disabled": ("light", 750),
   ),
-  "color": ("light", 700),
+  "color": ("dark", 900),
   "placeholder-color": ("light", 400),
   "help-color": ("light", 400),
 );
 
-$reverse: (
+$mode-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("light", 700),
+    "focus": ("dark", 900),
+    "hover": ("light", 750),
+    "active": ("dark", 900),
+    "disabled": ("light", 750),
+  ),
+  "color": ("dark", 900),
+  "placeholder-color": ("light", 400),
+  "help-color": ("light", 400),
+);
+
+$reverse-outline: (
+  "background-color": ("dark", 950),
+  "border-color": (
+    "": ("dark", 700),
+    "focus": ("dark", 750),
+    "hover": ("dark", 750),
+    "active": ("dark", 750),
+    "disabled": ("dark", 750),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("dark", 400),
+  "help-color": ("dark", 400),
+);
+
+$reverse-fill: (
   "background-color": ("dark", 700),
   "border-color": (
     "": ("dark", 700),
     "focus": ("dark", 750),
     "hover": ("dark", 750),
     "active": ("dark", 750),
-    "disabled": ("dark", 750)
+    "disabled": ("dark", 750),
   ),
-  "color": ("dark", 700),
+  "color": ("light", 900),
   "placeholder-color": ("dark", 400),
   "help-color": ("dark", 400),
 );
 
-$primary: (
-  "background-color": ("primary", 550),
+$reverse-underline: (
+  "background-color": ("dark", 950),
+  "border-color": (
+    "": ("dark", 700),
+    "focus": ("light", 900),
+    "hover": ("dark", 750),
+    "active": ("light", 900),
+    "disabled": ("dark", 750),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("dark", 400),
+  "help-color": ("dark", 400),
+);
+
+$primary-outline: (
+  "background-color": ("light", 950),
   "border-color": (
     "": ("primary", 550),
     "focus": ("primary", 650),
     "hover": ("primary", 650),
     "active": ("primary", 650),
-    "disabled": ("primary", 550)
+    "disabled": ("primary", 550),
   ),
   "color": ("primary", 550),
   "placeholder-color": ("primary", 100),
   "help-color": ("primary", 100),
 );
 
-$success: (
-  "background-color": ("success", 550),
+$primary-fill: (
+  "background-color": ("primary", 550),
+  "border-color": (
+    "": ("primary", 550),
+    "focus": ("primary", 650),
+    "hover": ("primary", 650),
+    "active": ("primary", 650),
+    "disabled": ("primary", 550),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("primary", 100),
+  "help-color": ("primary", 100),
+);
+
+$primary-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("primary", 550),
+    "focus": ("primary", 650),
+    "hover": ("primary", 650),
+    "active": ("primary", 650),
+    "disabled": ("primary", 550),
+  ),
+  "color": ("primary", 550),
+  "placeholder-color": ("primary", 100),
+  "help-color": ("primary", 100),
+);
+
+$success-outline: (
+  "background-color": ("light", 950),
   "border-color": (
     "": ("success", 550),
     "focus": ("success", 650),
     "hover": ("success", 650),
     "active": ("success", 650),
-    "disabled": ("success", 550)
+    "disabled": ("success", 550),
   ),
   "color": ("success", 550),
   "placeholder-color": ("success", 100),
   "help-color": ("success", 100),
 );
 
-$info: (
-  "background-color": ("info", 550),
+$success-fill: (
+  "background-color": ("success", 550),
+  "border-color": (
+    "": ("success", 550),
+    "focus": ("success", 650),
+    "hover": ("success", 650),
+    "active": ("success", 650),
+    "disabled": ("success", 550),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("success", 100),
+  "help-color": ("success", 100),
+);
+
+$success-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("success", 550),
+    "focus": ("success", 650),
+    "hover": ("success", 650),
+    "active": ("success", 650),
+    "disabled": ("success", 550),
+  ),
+  "color": ("success", 550),
+  "placeholder-color": ("success", 100),
+  "help-color": ("success", 100),
+);
+
+$info-outline: (
+  "background-color": ("light", 950),
   "border-color": (
     "": ("info", 550),
     "focus": ("info", 650),
     "hover": ("info", 650),
     "active": ("info", 650),
-    "disabled": ("info", 550)
+    "disabled": ("info", 550),
   ),
   "color": ("info", 550),
   "placeholder-color": ("info", 100),
   "help-color": ("info", 100),
 );
 
-$warning: (
-  "background-color": ("warning", 550),
+$info-fill: (
+  "background-color": ("info", 550),
+  "border-color": (
+    "": ("info", 550),
+    "focus": ("info", 650),
+    "hover": ("info", 650),
+    "active": ("info", 650),
+    "disabled": ("info", 550),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("info", 100),
+  "help-color": ("info", 100),
+);
+
+$info-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("info", 550),
+    "focus": ("info", 650),
+    "hover": ("info", 650),
+    "active": ("info", 650),
+    "disabled": ("info", 550),
+  ),
+  "color": ("info", 550),
+  "placeholder-color": ("info", 100),
+  "help-color": ("info", 100),
+);
+
+$warning-outline: (
+  "background-color": ("light", 950),
   "border-color": (
     "": ("warning", 550),
     "focus": ("warning", 650),
     "hover": ("warning", 650),
     "active": ("warning", 650),
-    "disabled": ("warning", 550)
+    "disabled": ("warning", 550),
   ),
   "color": ("warning", 550),
   "placeholder-color": ("warning", 100),
   "help-color": ("warning", 100),
 );
 
-$danger: (
+$warning-fill: (
+  "background-color": ("warning", 550),
+  "border-color": (
+    "": ("warning", 550),
+    "focus": ("warning", 650),
+    "hover": ("warning", 650),
+    "active": ("warning", 650),
+    "disabled": ("warning", 550),
+  ),
+  "color": ("dark", 900),
+  "placeholder-color": ("warning", 100),
+  "help-color": ("warning", 100),
+);
+
+$warning-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("warning", 550),
+    "focus": ("warning", 650),
+    "hover": ("warning", 650),
+    "active": ("warning", 650),
+    "disabled": ("warning", 550),
+  ),
+  "color": ("warning", 550),
+  "placeholder-color": ("warning", 100),
+  "help-color": ("warning", 100),
+);
+
+$danger-outline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("danger", 550),
+    "focus": ("danger", 650),
+    "hover": ("danger", 650),
+    "active": ("danger", 650),
+    "disabled": ("danger", 550),
+  ),
+  "color": ("danger", 550),
+  "placeholder-color": ("danger", 100),
+  "help-color": ("danger", 100),
+);
+
+$danger-fill: (
   "background-color": ("danger", 550),
   "border-color": (
     "": ("danger", 550),
     "focus": ("danger", 650),
     "hover": ("danger", 650),
     "active": ("danger", 650),
-    "disabled": ("danger", 550)
+    "disabled": ("danger", 550),
+  ),
+  "color": ("light", 900),
+  "placeholder-color": ("danger", 100),
+  "help-color": ("danger", 100),
+);
+
+$danger-underline: (
+  "background-color": ("light", 950),
+  "border-color": (
+    "": ("danger", 550),
+    "focus": ("danger", 650),
+    "hover": ("danger", 650),
+    "active": ("danger", 650),
+    "disabled": ("danger", 550),
   ),
   "color": ("danger", 550),
   "placeholder-color": ("danger", 100),
@@ -98,13 +295,26 @@ $danger: (
 
 $config: (
   "roles": (
-    "mode": $mode,
-    "reverse": $reverse,
-    "primary": $primary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-
+    "mode-outline": $mode-outline,
+    "mode-fill": $mode-fill,
+    "mode-underline": $mode-underline,
+    "reverse-outline": $reverse-outline,
+    "reverse-fill": $reverse-fill,
+    "reverse-underline": $reverse-underline,
+    "primary-outline": $primary-outline,
+    "primary-fill": $primary-fill,
+    "primary-underline": $primary-underline,
+    "success-outline": $success-outline,
+    "success-fill": $success-fill,
+    "success-underline": $success-underline,
+    "info-outline": $info-outline,
+    "info-fill": $info-fill,
+    "info-underline": $info-underline,
+    "warning-outline": $warning-outline,
+    "warning-fill": $warning-fill,
+    "warning-underline": $warning-underline,
+    "danger-outline": $danger-outline,
+    "danger-fill": $danger-fill,
+    "danger-underline": $danger-underline,
   ),
 );

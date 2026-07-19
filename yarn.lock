@@ -1061,44 +1061,53 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toife/core@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "@toife/core@npm:1.0.4"
+"@toife/core@file:../core::locator=doc-page%40workspace%3A.":
+  version: 1.0.6
+  resolution: "@toife/core@file:../core#../core::hash=d2ce2c&locator=doc-page%40workspace%3A."
   peerDependencies:
-    "@toife/sass-layer": ^1.2.2
+    "@toife/sass-layer": ^1.3.0
     sass: ^1.90.0
     typescript: ^5.9.2
-  checksum: 10c0/78d10434ae3ed23192a6f92f9cb0f89bfcb159de6bb15545d4ee9b2f9f6d27e91e5c94196b5ff6c0fecbf9ab4e6453be64093173c9ceba58598bb7a2f496a657
+  checksum: 10c0/4f440aea0f4a8450bceeff203ea67a5caac685f953a8dc43066f08e0fdf5a8aadcd9b82fe871f3438ddfc8f06a4e5254b39e758a6b126ef27db53d7e871b8b1a
   languageName: node
   linkType: hard
 
-"@toife/gesture@npm:^1.1.8":
+"@toife/gesture@file:../gesture::locator=doc-page%40workspace%3A.":
   version: 1.1.10
-  resolution: "@toife/gesture@npm:1.1.10"
-  checksum: 10c0/80d2dd682762731c126fd428a8e1ca7f9bcec3f2b7a8261d48765bd6cd09e5b1aa6f1b3eda867eca77c072eb6a2cef158a4fa619d0bf3190fe225527ffa2cade
+  resolution: "@toife/gesture@file:../gesture#../gesture::hash=ce6199&locator=doc-page%40workspace%3A."
+  checksum: 10c0/0d1b48cf60d661de6a80cdb3fa93421a24e2e44e792af1e5c6dc53d1ff0bc794d0b82ceb0a941edb62f7b52bab2067cf6ce89d9d86c458017536c020ee82599d
   languageName: node
   linkType: hard
 
-"@toife/sass-layer@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@toife/sass-layer@npm:1.2.2"
+"@toife/sass-layer@file:../sass-layer::locator=doc-page%40workspace%3A.":
+  version: 1.4.4
+  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=de9894&locator=doc-page%40workspace%3A."
   peerDependencies:
     sass: ">=1.50.0"
-  checksum: 10c0/abfb47ce55c54a9f12e30f4d4b58d900427837094874d07429df7927a26175ab65e17c9d9aa546a118892180fa783b200eb8a6a6684a61f5deef9c8aa8329880
+  checksum: 10c0/f24b10c2700c0cdf5b25a9c475b363227204f2123a16affed8e14e5fa45c22ec3bc38e1d27029a1c70a276ed283ec5d5af64e03234fcc12ea8f2d2904d007fe3
   languageName: node
   linkType: hard
 
-"@toife/vue@npm:^3.2.4":
-  version: 3.2.4
-  resolution: "@toife/vue@npm:3.2.4"
-  dependencies:
-    "@toife/core": "npm:^1.0.4"
-    "@toife/gesture": "npm:^1.1.8"
-    "@toife/sass-layer": "npm:^1.2.2"
+"@toife/sass-utils@file:../sass-utils::locator=doc-page%40workspace%3A.":
+  version: 1.1.2
+  resolution: "@toife/sass-utils@file:../sass-utils#../sass-utils::hash=fa7ba7&locator=doc-page%40workspace%3A."
   peerDependencies:
+    "@toife/sass-layer": ">=1.3.2"
+    sass: ">=1.50.0"
+  checksum: 10c0/6e9cafe6a5a2d9f08c50612c69b572ee1aeb653ebcf324773edabebe2c0102d3b09ff306bfa2466c566adae0d58b112fb69d8f9ce5628215efa018abfc4db57a
+  languageName: node
+  linkType: hard
+
+"@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
+  version: 3.2.7
+  resolution: "@toife/vue@file:../vue#../vue::hash=dcd53c&locator=doc-page%40workspace%3A."
+  peerDependencies:
+    "@toife/core": ^1.0.6
+    "@toife/gesture": ^1.1.8
+    "@toife/sass-layer": ^1.3.0
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/ae4a79770138d09d79b902f31074cafd7e450776be1dc9e81b01ee4b93b8af97dd8c275b2d595be02f91580309747936cb9db29ff2e1cd73abe316ff868a67ff
+  checksum: 10c0/d4035c2686efcd331530d02173778c1508fb6b58a9dc823eb13ab702241369ceeec23fc46975024ea1e0afb01c9a8f8902a191df7ae31085d4003219d8b6445b
   languageName: node
   linkType: hard
 
@@ -1592,7 +1601,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "doc-page@workspace:."
   dependencies:
-    "@toife/vue": "npm:^3.2.4"
+    "@toife/core": "file:../core"
+    "@toife/gesture": "file:../gesture"
+    "@toife/sass-layer": "file:../sass-layer"
+    "@toife/sass-utils": "file:../sass-utils"
+    "@toife/vue": "file:../vue"
     "@types/node": "npm:^22.10.0"
     "@vitejs/plugin-vue": "npm:^6.0.1"
     sass: "npm:^1.90.0"

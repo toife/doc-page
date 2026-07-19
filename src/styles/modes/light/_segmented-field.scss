@@ -1,40 +1,110 @@
-$mode: (
+// outline / fill / underline variants for segmented-field message color.
+$mode-outline: (
   "color": ("light", 700),
 );
 
-$reverse: (
+$mode-fill: (
+  "color": ("light", 700),
+);
+
+$mode-underline: (
+  "color": ("light", 700),
+);
+
+$reverse-outline: (
   "color": ("dark", 700),
 );
 
-$primary: (
+$reverse-fill: (
+  "color": ("dark", 700),
+);
+
+$reverse-underline: (
+  "color": ("dark", 700),
+);
+
+$primary-outline: (
   "color": ("primary", 550),
 );
 
-$success: (
+$primary-fill: (
+  "color": ("primary", 550),
+);
+
+$primary-underline: (
+  "color": ("primary", 550),
+);
+
+$success-outline: (
   "color": ("success", 550),
 );
 
-$info: (
+$success-fill: (
+  "color": ("success", 550),
+);
+
+$success-underline: (
+  "color": ("success", 550),
+);
+
+$info-outline: (
   "color": ("info", 550),
 );
 
-$warning: (
+$info-fill: (
+  "color": ("info", 550),
+);
+
+$info-underline: (
+  "color": ("info", 550),
+);
+
+$warning-outline: (
   "color": ("warning", 550),
 );
 
-$danger: (
+$warning-fill: (
+  "color": ("warning", 550),
+);
+
+$warning-underline: (
+  "color": ("warning", 550),
+);
+
+$danger-outline: (
+  "color": ("danger", 550),
+);
+
+$danger-fill: (
+  "color": ("danger", 550),
+);
+
+$danger-underline: (
   "color": ("danger", 550),
 );
 
 $config: (
   "roles": (
-    "mode": $mode,
-    "reverse": $reverse,
-    "primary": $primary,
-    "success": $success,
-    "info": $info,
-    "warning": $warning,
-    "danger": $danger,
-
+    "mode-outline": $mode-outline,
+    "mode-fill": $mode-fill,
+    "mode-underline": $mode-underline,
+    "reverse-outline": $reverse-outline,
+    "reverse-fill": $reverse-fill,
+    "reverse-underline": $reverse-underline,
+    "primary-outline": $primary-outline,
+    "primary-fill": $primary-fill,
+    "primary-underline": $primary-underline,
+    "success-outline": $success-outline,
+    "success-fill": $success-fill,
+    "success-underline": $success-underline,
+    "info-outline": $info-outline,
+    "info-fill": $info-fill,
+    "info-underline": $info-underline,
+    "warning-outline": $warning-outline,
+    "warning-fill": $warning-fill,
+    "warning-underline": $warning-underline,
+    "danger-outline": $danger-outline,
+    "danger-fill": $danger-fill,
+    "danger-underline": $danger-underline,
   ),
 );

@@ -214,6 +214,7 @@ const componentNavGroups: ComponentNavGroup[] = [
       { to: "/components/present", label: "Present", tag: "t-present" },
       { to: "/components/decision-modal", label: "Decision modal", tag: "t-decision-modal" },
       { to: "/components/toast", label: "Toast", tag: "t-toast" },
+      { to: "/components/tooltip", label: "Tooltip", tag: "t-tooltip" },
       { to: "/components/action", label: "Action", tag: "t-action" },
     ],
   },

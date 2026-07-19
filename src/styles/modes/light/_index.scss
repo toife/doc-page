@@ -25,8 +25,42 @@
 @use "slide-range";
 @use "badge";
 @use "route-navigator";
+@use "tooltip";
 
-$mode: (
+
+// Roles
+$colors: (
+  "light": (
+    #ffffff,
+    950,
+  ),
+  "dark": (
+    #000000,
+    950,
+  ),
+  "primary": (
+    #0152a8,
+    550,
+  ),
+  "danger": (
+    #dc3545,
+    550,
+  ),
+  "success": (
+    #1c9172,
+    550,
+  ),
+  "info": (
+    #148ad9,
+    550,
+  ),
+  "warning": (
+    #ffc107,
+    550,
+  ),
+);
+
+$layers: (
   "backdrop": backdrop.$config,
   "text": text.$config,
   "app": app.$config,
@@ -53,4 +87,10 @@ $mode: (
   "slide-range": slide-range.$config,
   "badge": badge.$config,
   "route-navigator": route-navigator.$config,
+  "tooltip": tooltip.$config,
+);
+
+$mode: (
+  "colors": $colors,
+  "layers": $layers,
 );
